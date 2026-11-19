@@ -1,16 +1,58 @@
 .bar .brand-ndc { display: block; width: 46px; height: 41px; }
 .nav { gap: clamp(14px, 1.5vw, 26px); }
-.nav a { font-size: 15px; letter-spacing: .04em; white-space: nowrap; }
+.nav a, .nav summary { font: 600 15px var(--mono); letter-spacing: .04em; white-space: nowrap; }
+.nav { align-items: center; }
+.agenda-menu { position: relative; }
+.agenda-menu summary { cursor: pointer; text-transform: uppercase; }
+.agenda-links { position: absolute; top: calc(100% + 10px); left: 0; min-width: max-content; display: grid; gap: 14px; padding: 16px; color: var(--ink); background: var(--paper); border: 1px solid currentColor; }
 .hero .hero-figure { z-index: 2; mix-blend-mode: normal; }
 .hero .hero-name { z-index: 1; }
+main > section:not(.launch), .act { position: relative; isolation: isolate; }
+main > section:not(.launch, .acts)::before, .act::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("/img/lion-white.webp") right top / min(62vw, 700px) auto no-repeat;
+  opacity: .07;
+  filter: brightness(0);
+  pointer-events: none;
+}
+.act-2::before, main > :is(.join, .donate-panel)::before { filter: none; }
+.act-portrait { display: block; width: min(100%, 340px); height: auto; }
+main > :is(.thesis, .record, .numbers, .trail, .press, .join, .donate-panel)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("/img/nii-hero-removebg.png") right bottom / min(36vw, 300px) auto no-repeat;
+  opacity: .14;
+  pointer-events: none;
+}
+.record-head #record-h { font-size: clamp(32px, 5.5vw, 90px); max-width: 21ch; }
+.rc-end time { display: block; font: 900 clamp(24px, 3vw, 44px)/1 var(--display); margin-bottom: 12px; }
+.launch .launch-side { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+@media (max-width: 900px) {
+  .launch .launch-side { grid-template-columns: 1fr; }
+  .launch .launch-poster { width: min(82%, 360px); }
+  .act-portrait { width: min(62vw, 260px); }
+}
 .photo-downloads { margin-top: 56px; scroll-margin-top: 120px; }
 .photo-downloads h3 { font-family: var(--display); font-size: clamp(32px, 5vw, 64px); text-transform: uppercase; }
 .photo-downloads p { margin: 8px 0 16px; }
 .photo-links { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 8px 24px; }
-.photo-links a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid currentColor; text-underline-offset: .22em; }
+.photo-links { gap: 24px; }
+.photo-card { border-bottom: 1px solid currentColor; padding-bottom: 12px; }
+.photo-preview { display: block; background: var(--ink); }
+.photo-preview img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+.photo-card p { margin: 10px 0 4px; font-weight: 600; }
+.photo-save { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; text-underline-offset: .22em; }
+.donate-panel { padding: clamp(56px, 9vw, 120px) var(--pad); background: var(--green-deep); color: white; scroll-margin-top: 120px; }
+.donate-panel h2 { font: 900 clamp(48px, 8vw, 104px)/1 var(--display); text-transform: uppercase; margin: 12px 0; }
 @media (max-width: 1100px) {
   .bar { flex-wrap: wrap; row-gap: 4px; }
-  .bar .nav { display: flex; order: 1; width: 100%; margin: 0; overflow-x: auto; padding: 6px 0; }
+  .bar .nav { display: flex; order: 1; width: 100%; margin: 0; justify-content: space-between; gap: 4px; padding: 6px 0; }
+  .bar .nav a, .bar .nav summary { font-size: clamp(11px, 3.5vw, 15px); }
   .bar .nav a { padding: 4px 0; }
   .bar .brand-ndc { width: 38px; height: 34px; }
   main { padding-top: 42px; }
