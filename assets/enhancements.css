@@ -7,3 +7,5 @@ html{scroll-padding-top:100px;scroll-behavior:smooth}body{overflow-x:clip}::sele
 
 @media (prefers-reduced-motion:no-preference){.volunteer-roles input:checked+span b{animation:role-confirm .45s var(--motion-ease)}@keyframes role-confirm{from{transform:rotate(-90deg) scale(.5)}to{transform:rotate(0) scale(1)}}}
 @media(min-width:1101px){.nav-volunteer{display:none}}
+
+.brand .campaign-logo{display:block;width:52px;height:42px;object-fit:contain;flex:none;background:#fff}.brand{flex-shrink:0}@media(max-width:600px){.brand .campaign-logo{width:40px;height:34px}.bar{gap:12px}.brand{gap:9px;font-size:23px}.bar-actions{gap:6px}.btn-donate{padding:11px 12px;gap:12px}.menu-toggle{padding:10px 6px}}
