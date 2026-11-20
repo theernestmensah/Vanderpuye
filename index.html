@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Edwin Nii Lantey Vanderpuye | NDC National Chairman Campaign</title>
 <meta name="description" content="Explore Edwin Nii Lantey Vanderpuye’s campaign for NDC National Chairman, his Reset, Reform, Rebuild plan, and the 21 November 2026 launch at KNUST Great Hall." />
@@ -74,7 +75,7 @@
   <a class="btn-join" href="#join"><span class="lg-only">Join the movement </span><span class="sm-only">Join </span><span aria-hidden="true">↘</span></a>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 <section class="hero" aria-labelledby="hero-name">
   <div class="hero-meta mono">
     <span>NDC · Ninth National Delegates Congress</span>
@@ -247,8 +248,7 @@
 
 <section class="pull">
   <figure class="pull-photo">
-    <div class="pp-panel"><span class="pp-word" aria-hidden="true">Nii</span><img src="/img/nii-cutout.webp" alt="Nii Lantey Vanderpuye" loading="lazy" width="1400" height="1907" /></div>
-    <figcaption class="mono"><span>Nii Lantey Vanderpuye</span><span>Photo: <a href="https://commons.wikimedia.org/wiki/File:Honourable_Edwin_Nii_Lantey_Vanderpuye.jpg">Kash001 / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Background removed</span></figcaption>
+    <div class="pp-panel"><span class="pp-word" aria-hidden="true">Nii</span><img src="/img/nii-hero-removebg.png" alt="Nii Lantey Vanderpuye" loading="lazy" width="393" height="443" /></div>
   </figure>
   <div class="pull-text">
     <p class="mono kicker"><span class="red">●</span> Why he's running</p>
@@ -392,7 +392,7 @@
       <p>“The moment is here! <span class="gh-flag" role="img" aria-label="Ghana flag"><i></i></span> With humility, I step forward to serve. Together, we move <img class="inline-lion" src="/img/lion-badge-128.png" alt="lion" width="22" height="22" /> Get VANDER-FIED!”</p>
       <footer class="mono"><a href="https://x.com/niilanteyvanpee" target="_blank" rel="noopener">@niilanteyvanpee on X ↗</a> · 5 Nov 2026</footer>
     </blockquote>
-    <p>Delegates, executives, volunteers: your voice matters here. Tell us where you are and we'll find you.</p>
+    <p>To reach the campaign, use one of the contact channels below.</p>
     <ul class="socials" aria-label="Follow the campaign">
       <li><a href="https://www.facebook.com/profile.php?id=100059487464678" target="_blank" rel="noopener"><span class="mono">Facebook</span><b>Hon. Edwin Nii Lantey Vanderpuye</b><span aria-hidden="true">↗</span></a></li>
       <li><a href="https://x.com/niilanteyvanpee" target="_blank" rel="noopener"><span class="mono">X</span><b>@niilanteyvanpee</b><span aria-hidden="true">↗</span></a></li>
@@ -400,6 +400,7 @@
     </ul>
   </div>
   <form class="join-form" novalidate>
+    <p class="full">Signup preview. Use sample details to try the form. Entries stay in this tab and are cleared when you finish. <a href="/privacy.html">Read the privacy policy</a>.</p>
     <label class="f"><span class="mono">Full name</span><input name="name" required autocomplete="name" placeholder="Ama Mensah" /></label>
     <label class="f"><span class="mono">Phone / WhatsApp</span><input name="phone" required inputmode="tel" autocomplete="tel" placeholder="+233 …" /></label>
     <label class="f"><span class="mono">Region</span>
@@ -414,7 +415,7 @@
       <label><input type="radio" name="role" value="volunteer" /><span>Volunteer</span></label>
     </fieldset>
     <label class="f full"><span class="mono">Your message to Nii <em>(optional)</em></span><textarea name="msg" rows="3" placeholder="What should the next Chairman hear from your constituency?"></textarea></label>
-    <button type="submit" class="submit"><span>Count me in</span><span aria-hidden="true">→</span></button>
+    <button type="submit" class="submit"><span>Finish preview</span><span aria-hidden="true">→</span></button>
     <p class="form-status mono" role="status" aria-live="polite"></p>
   </form>
 </section>
@@ -444,7 +445,7 @@
     </ul>
   </div>
   <div class="foot-row fine">
-    <p>Not an official publication of the National Democratic Congress or the campaign.</p>
+    <nav aria-label="Site information"><a href="/privacy.html">Privacy &amp; data</a> · <a href="#join">Contact</a></nav>
     <a class="mono" href="#top">Back to top ↑</a>
   </div>
 </footer>
