@@ -20,7 +20,7 @@ main > section:not(.launch, .acts)::before, .act::before {
 }
 .act-2::before, main > :is(.join, .donate-panel)::before { filter: none; }
 .act-portrait { display: block; width: min(100%, 340px); height: auto; }
-main > :is(.thesis, .record, .numbers, .trail, .press, .join, .donate-panel)::after {
+main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -30,6 +30,15 @@ main > :is(.thesis, .record, .numbers, .trail, .press, .join, .donate-panel)::af
   pointer-events: none;
 }
 .record-head #record-h { font-size: clamp(32px, 5.5vw, 90px); max-width: 21ch; }
+.thesis-profile { align-self: start; }
+.thesis-profile h2 { margin: 0 0 16px; font-size: 14px; }
+.thesis-profile img { display: block; width: min(100%, 270px); height: auto; background: var(--green-deep); }
+@media (max-width: 900px) {
+  main .thesis { padding-block: 56px; row-gap: 24px; }
+  .thesis-profile img { width: 100%; height: clamp(130px, 39vw, 210px); object-fit: contain; object-position: 20% bottom; background: url("/img/lion-white.webp") 85% center / auto 70% no-repeat, var(--green-deep); }
+  .thesis .thesis-quote p { font-size: clamp(32px, 8vw, 54px); line-height: 1.09; }
+  .thesis .thesis-aside { margin-top: 0; }
+}
 .rc-end time { display: block; font: 900 clamp(24px, 3vw, 44px)/1 var(--display); margin-bottom: 12px; }
 .launch .launch-side { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
 @media (max-width: 900px) {
