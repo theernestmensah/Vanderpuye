@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vanderpuye Campaign//National Launch//EN
+BEGIN:VEVENT
+UID:national-launch-20261121-1400@nii4chairman
+DTSTAMP:20261120T000000Z
+DTSTART:20261121T140000Z
+SUMMARY:National Campaign Launch — Edwin Nii Lantey Vanderpuye
+LOCATION:KNUST Great Hall\, Kumasi
+END:VEVENT
+END:VCALENDAR

@@ -25,7 +25,7 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("/img/nii-hero-removebg.png") right bottom / min(36vw, 300px) auto no-repeat;
+  background: url("/img/nii-campaign.webp") right bottom / min(36vw, 300px) auto no-repeat;
   opacity: .14;
   pointer-events: none;
 }
@@ -97,3 +97,19 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
 .privacy-page { max-width: 72ch; margin-inline: auto; padding: clamp(32px, 7vw, 88px) 22px; line-height: 1.6; }
 .privacy-page h1 { font: 900 clamp(48px, 9vw, 88px)/1 var(--display); margin: 32px 0 8px; }
 .privacy-page h2 { font-size: 1.35rem; margin: 28px 0 6px; }
+.skip-link { position: fixed; top: 0; left: 1rem; z-index: 200; padding: 12px; background: white; color: black; transform: translateY(-120%); }
+.skip-link:focus { transform: none; }
+.join-form .roles input:focus-visible + span, .join-form .f :is(input, select, textarea):focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.join-form .roles span, .bar .btn-join { min-height: 44px; }
+.join .red, .foot .red { color: #ff7382; }
+:focus-visible { outline: 3px solid #0574cc; outline-offset: 3px; box-shadow: 0 0 0 3px white; }
+.bar { background: var(--paper); }
+@media (min-width: 901px) {
+  .record .record-track { width: 100%; overflow-x: auto; padding-bottom: 20px; }
+  .record .record-progress { display: none; }
+}
+.ticker .ticker-track { animation: none; }
+.ticker { overflow-x: auto; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

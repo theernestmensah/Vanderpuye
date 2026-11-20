@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
+<meta http-equiv="Content-Security-Policy" content="form-action 'self'" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Edwin Nii Lantey Vanderpuye | NDC National Chairman Campaign</title>
 <meta name="description" content="Explore Edwin Nii Lantey Vanderpuye’s campaign for NDC National Chairman, his Reset, Reform, Rebuild plan, and the 21 November 2026 launch at KNUST Great Hall." />
@@ -42,12 +42,13 @@
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preload" as="image" href="/img/nii-hero-removebg.png" />
-  <script type="module" crossorigin src="/assets/index-Dlv8k-Qb.js"></script>
+<link rel="preload" as="image" href="/img/nii-campaign.webp" />
+  <script type="module" src="/assets/campaign.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BBf6ueGo.css">
   <link rel="stylesheet" href="/assets/campaign.css" />
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <div class="grain" aria-hidden="true"></div>
 
 <header class="bar" id="top">
@@ -89,7 +90,7 @@
   </h1>
 
   <figure class="hero-figure">
-    <img src="/img/nii-hero-removebg.png" alt="Edwin Nii Lantey Vanderpuye wearing a white shirt with an NDC badge" width="393" height="443" fetchpriority="high" />
+    <img src="/img/nii-campaign.webp" alt="Edwin Nii Lantey Vanderpuye wearing a white shirt with an NDC badge" width="393" height="443" fetchpriority="high" />
   </figure>
 
   <div class="hero-slogan">
@@ -147,7 +148,7 @@
     </figure>
     <div class="launch-copy">
       <p>You’re invited to the National Campaign Launch on <time datetime="2026-11-21T14:00:00+00:00">Saturday, 21 November 2026, at 2:00 p.m. GMT</time> at the KNUST Great Hall in Kumasi.</p>
-      <a class="btn-cal mono" href="#" data-ics>Add to calendar <span aria-hidden="true">＋</span></a>
+      <a class="btn-cal mono" href="/launch.ics" download>Add launch to calendar <span aria-hidden="true">＋</span></a>
       <a class="btn-cal mono" href="/img/launch-poster.webp" download>Download invitation <span aria-hidden="true">↓</span></a>
     </div>
   </div>
@@ -156,7 +157,7 @@
 <section class="thesis" id="thesis">
   <header class="thesis-profile">
     <h2 class="thesis-label mono">The thesis</h2>
-    <img src="/img/nii-hero-removebg.png" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" />
+    <img src="/img/nii-campaign.webp" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" />
   </header>
   <blockquote class="thesis-quote">
     <p class="scrub">“Organisation decides everything, but organisation cannot survive when you have not built structures that will sustain it. We must rebuild that spirit.”</p>
@@ -170,7 +171,7 @@
 
 <section class="acts" id="acts" aria-label="Reset, Reform, Rebuild">
   <article class="act act-1">
-    <div class="act-side"><img class="act-portrait" src="/img/nii-hero-removebg.png" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" /><p class="act-cap mono">Mind · Heart · Attitude</p></div>
+    <div class="act-side"><img class="act-portrait" src="/img/nii-campaign.webp" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" /><p class="act-cap mono">Mind · Heart · Attitude</p></div>
     <div class="act-body">
       <p class="mono act-k">Act One <span>/ 03</span></p>
       <h2 class="act-title">Reset<span class="red">.</span></h2>
@@ -184,7 +185,7 @@
   </article>
 
   <article class="act act-2">
-    <div class="act-side"><img class="act-portrait" src="/img/nii-hero-removebg.png" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" /><p class="act-cap mono">Desk · Conference · Congress</p></div>
+    <div class="act-side"><img class="act-portrait" src="/img/nii-campaign.webp" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" /><p class="act-cap mono">Desk · Conference · Congress</p></div>
     <div class="act-body">
       <p class="mono act-k">Act Two <span>/ 03</span></p>
       <h2 class="act-title">Reform<span class="red">.</span></h2>
@@ -199,7 +200,7 @@
   </article>
 
   <article class="act act-3">
-    <div class="act-side"><img class="act-portrait" src="/img/nii-hero-removebg.png" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" /><p class="act-cap mono">Resources · Momentum · 2028</p></div>
+    <div class="act-side"><img class="act-portrait" src="/img/nii-campaign.webp" alt="Edwin Nii Lantey Vanderpuye" width="393" height="443" loading="lazy" decoding="async" /><p class="act-cap mono">Resources · Momentum · 2028</p></div>
     <div class="act-body">
       <p class="mono act-k">Act Three <span>/ 03</span></p>
       <h2 class="act-title">Rebuild<span class="ink">.</span></h2>
@@ -220,16 +221,15 @@
       <p class="mono"><span class="red">●</span> The record · 1990 — 2026</p>
       <h2 id="record-h">From the commentary box <em>to contesting</em> the National Chairman position of the NDC.</h2>
     </div>
-    <div class="record-track">
+    <div class="record-track" tabindex="0" role="region" aria-label="Career timeline">
       <article class="rc"><b>1990</b><h3>Ghana Broadcasting Corporation</h3><p>Fourteen years in GBC's sports room, rising to Deputy Head of Sports by 2004.</p></article>
       <article class="rc"><b>2005</b><h3>Head of Sports, Network Broadcasting</h3><p>Led sports at Network Broadcasting Ltd until 2008.</p></article>
-      <article class="rc"><b>2009</b><h3>The Presidency</h3><p>Special aide and Director of Operations under President Mills.</p><span class="mono tag">Mills era · exact dates TBC</span></article>
-      <article class="rc rc-big"><b>2012</b><h3>Elected, Odododiodio</h3><p>45,967 votes, 63% of the total. The first of three terms.</p></article>
+      <article class="rc rc-big"><b>2012</b><h3>Elected, Odododiodio</h3><p>Wins the parliamentary seat for the first of three terms.</p></article>
       <article class="rc"><b>2013</b><h3>Deputy Minister, Trade &amp; Industry</h3><p>Appointed in March 2013 in the Mahama government.</p></article>
       <article class="rc"><b>2014</b><h3>Deputy Minister, Local Government</h3><p>Local Government &amp; Rural Development, 2014–2015.</p></article>
       <article class="rc rc-big"><b>2016</b><h3>Minister of Youth &amp; Sports</h3><p>The former sports broadcaster takes charge of the ministry.</p></article>
-      <article class="rc"><b>2016</b><h3>Re-elected</h3><p>57.04% in Odododiodio. Ranking Member, Local Government Committee.</p></article>
-      <article class="rc"><b>2020</b><h3>Third term</h3><p>Re-elected with 53.83%. Steps aside from Parliament in January 2025.</p></article>
+      <article class="rc"><b>2016</b><h3>Re-elected</h3><p>Returns to Parliament for Odododiodio.</p></article>
+      <article class="rc"><b>2020</b><h3>Third term</h3><p>Wins a third term representing Odododiodio.</p></article>
       <article class="rc"><b>2025</b><h3>National Coordinator, DRIP</h3><p>District Road Improvement Programme, from January 2025.</p></article>
       <article class="rc rc-red"><b>2026</b><h3>Resigns to run</h3><p>Steps down from DRIP in June, files on 9 November, and is cleared as one of four candidates for Chairman.</p></article>
       <article class="rc rc-end"><time datetime="2026-12-19">19th December 2026</time><h3>Congress</h3><p>Delegates, please vote for Edwin Nii Lantey Vanderpuye as National Chairman of the NDC</p></article>
@@ -248,7 +248,7 @@
 
 <section class="pull">
   <figure class="pull-photo">
-    <div class="pp-panel"><span class="pp-word" aria-hidden="true">Nii</span><img src="/img/nii-hero-removebg.png" alt="Nii Lantey Vanderpuye" loading="lazy" width="393" height="443" /></div>
+    <div class="pp-panel"><span class="pp-word" aria-hidden="true">Nii</span><img src="/img/nii-campaign.webp" alt="Nii Lantey Vanderpuye" loading="lazy" width="393" height="443" /></div>
   </figure>
   <div class="pull-text">
     <p class="mono kicker"><span class="red">●</span> Why he's running</p>
@@ -284,10 +284,8 @@
       </div>
       <p class="mono trail-k second">Trail diary</p>
       <ol class="diary">
-        <li><time class="mono">17 Nov</time><b>Central Region · Day 1</b><span class="mono d-tag">Done</span></li>
         <li><time class="mono">17 Nov</time><b>Central Region · Day 2 &amp; final</b><span class="mono d-tag">Done</span></li>
         <li class="now"><time class="mono">18 Nov</time><b>Western Region · Day One</b><span class="mono d-tag">Latest</span></li>
-        <li><time class="mono">19 Nov</time><b>Western Region · Day Two</b><span class="mono d-tag">Scheduled</span></li>
         <li class="key"><time class="mono">21 Nov</time><b>Official Campaign Launch · KNUST Great Hall, 2PM</b><span class="mono d-tag">Kumasi</span></li>
         <li><time class="mono" datetime="2026-12-19">19th December 2026</time><b>Ninth National Delegates Congress</b><span class="mono d-tag">Vote</span></li>
       </ol>
@@ -399,24 +397,26 @@
       <li><a href="https://www.instagram.com/hon_nii_lantey_vanderpuye/" target="_blank" rel="noopener"><span class="mono">Instagram</span><b>@hon_nii_lantey_vanderpuye</b><span aria-hidden="true">↗</span></a></li>
     </ul>
   </div>
-  <form class="join-form" novalidate>
-    <p class="full">Signup preview. Use sample details to try the form. Entries stay in this tab and are cleared when you finish. <a href="/privacy.html">Read the privacy policy</a>.</p>
+  <form class="join-form" name="campaign-signup" method="post" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="campaign-signup" />
+    <label hidden>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
     <label class="f"><span class="mono">Full name</span><input name="name" required autocomplete="name" placeholder="Ama Mensah" /></label>
-    <label class="f"><span class="mono">Phone / WhatsApp</span><input name="phone" required inputmode="tel" autocomplete="tel" placeholder="+233 …" /></label>
-    <label class="f"><span class="mono">Region</span>
-      <select name="region" required>
+    <label class="f"><span class="mono">Phone / WhatsApp</span><input name="phone" type="tel" required minlength="7" maxlength="24" pattern="\+?[0-9][0-9\s\-]{5,21}[0-9]" title="Enter a phone number using digits, spaces or hyphens, optionally starting with +." autocomplete="tel" placeholder="+233 …" /></label>
+    <label class="f"><span class="mono">Region (optional)</span>
+      <select name="region">
         <option value="">Select region</option>
         <option>Ahafo</option><option>Ashanti</option><option>Bono</option><option>Bono East</option><option>Central</option><option>Eastern</option><option>Greater Accra</option><option>North East</option><option>Northern</option><option>Oti</option><option>Savannah</option><option>Upper East</option><option>Upper West</option><option>Volta</option><option>Western</option><option>Western North</option><option>Diaspora</option>
       </select></label>
     <label class="f"><span class="mono">Constituency</span><input name="constituency" placeholder="e.g. Odododiodio" /></label>
     <fieldset class="f roles"><legend class="mono">I am a</legend>
-      <label><input type="radio" name="role" value="delegate" checked /><span>Delegate</span></label>
+      <label><input type="radio" name="role" value="delegate" /><span>Delegate</span></label>
       <label><input type="radio" name="role" value="executive" /><span>Executive</span></label>
       <label><input type="radio" name="role" value="volunteer" /><span>Volunteer</span></label>
     </fieldset>
     <label class="f full"><span class="mono">Your message to Nii <em>(optional)</em></span><textarea name="msg" rows="3" placeholder="What should the next Chairman hear from your constituency?"></textarea></label>
-    <button type="submit" class="submit"><span>Finish preview</span><span aria-hidden="true">→</span></button>
-    <p class="form-status mono" role="status" aria-live="polite"></p>
+    <label class="full"><input type="checkbox" name="contact-consent" value="yes" required /> I agree to be contacted about this campaign. <a href="/privacy.html">Privacy policy</a></label>
+    <button type="submit" class="submit"><span>Join the campaign</span><span aria-hidden="true">→</span></button>
+    <p class="form-status full" role="status"></p>
   </form>
 </section>
 <section class="donate-panel" id="donate" aria-labelledby="donate-h">
