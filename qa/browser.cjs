@@ -80,6 +80,13 @@ async function run() {
     await form.locator('button').click();
     await page.waitForURL('**/thanks.html');
     assert.equal(posts, 2);
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    await page.goto(base);
+    await page.locator('.record .pin-spacer').waitFor({ state: 'attached' });
+    assert.notEqual(await page.locator('.ticker-track').evaluate(track => getComputedStyle(track).animationName), 'none');
+    await page.locator('.nav a[href="#launch"]').click();
+    await page.waitForURL('**/#launch');
+    assert.ok(await page.evaluate(() => scrollY > 0));
     assert.deepEqual(errors, []);
     console.log('Five viewport widths, keyboard menu, internal links, image paths, 404, validation and simulated submission flows passed.');
   } finally { await browser.close(); }

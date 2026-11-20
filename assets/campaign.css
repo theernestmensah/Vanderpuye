@@ -104,12 +104,12 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
 .join .red, .foot .red { color: #ff7382; }
 :focus-visible { outline: 3px solid #0574cc; outline-offset: 3px; box-shadow: 0 0 0 3px white; }
 .bar { background: var(--paper); }
-@media (min-width: 901px) {
+@media (min-width: 901px) and (prefers-reduced-motion: reduce) {
   .record .record-track { width: 100%; overflow-x: auto; padding-bottom: 20px; }
   .record .record-progress { display: none; }
 }
-.ticker .ticker-track { animation: none; }
-.ticker { overflow-x: auto; }
 @media (prefers-reduced-motion: reduce) {
+  .ticker .ticker-track { animation: none; }
+  .ticker { overflow-x: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }

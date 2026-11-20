@@ -6,7 +6,7 @@ const preview = Boolean(process.env.CONTEXT && process.env.CONTEXT !== 'producti
 const output = process.env.BUILD_OUTPUT || 'dist';
 await mkdir(output, { recursive: true });
 for (const file of ['img', 'assets', '404.html', 'thanks.html', 'apple-touch-icon.png', 'favicon.ico', 'favicon-32.png', 'launch.ics']) {
-  await cp(file, output + '/' + file, { recursive: true, filter: source => !source.endsWith('index-Dlv8k-Qb.js') });
+  await cp(file, output + '/' + file, { recursive: true });
 }
 const urls = [];
 for (const [file, path] of [['index.html', '/'], ['privacy.html', '/privacy']]) {

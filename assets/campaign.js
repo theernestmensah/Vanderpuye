@@ -1,3 +1,7 @@
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  import('./index-Dlv8k-Qb.js');
+}
+
 const day = 86400000;
 const election = Date.UTC(2026, 11, 19);
 const launch = Date.UTC(2026, 10, 21, 14);
