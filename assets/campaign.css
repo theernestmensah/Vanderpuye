@@ -104,8 +104,28 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
 .join .red, .foot .red { color: #ff7382; }
 :focus-visible { outline: 3px solid #0574cc; outline-offset: 3px; box-shadow: 0 0 0 3px white; }
 .bar { background: var(--paper); }
-.thesis-profile img.studio-portrait { height: auto; object-fit: contain; background: #64635e; }
+.thesis-profile img.studio-portrait { object-fit: contain; background: #64635e; }
 .pp-panel img.studio-portrait { width: 100%; height: 100%; object-fit: cover; filter: none; }
+/* Match section portraits to the portrait beside the leadership quote. */
+main { --section-portrait-width: calc((100vw - var(--pad) * 2 - 6vw) * 4 / 11); }
+.thesis-profile { width: var(--section-portrait-width); max-width: 100%; }
+.thesis { grid-template-columns: var(--section-portrait-width) minmax(0, 1fr); }
+.thesis-profile img, .thesis-profile img.studio-portrait, .act-portrait {
+  display: block;
+  width: var(--section-portrait-width);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  object-position: center bottom;
+}
+.photo-card-portrait .photo-preview { background: transparent; }
+.photo-card-portrait .photo-preview img { height: 220px; aspect-ratio: auto; object-fit: contain; }
+@media (max-width: 900px) {
+  main { --section-portrait-width: min(100%, 320px); }
+  .thesis { grid-template-columns: 1fr; }
+  .pull-photo { width: var(--section-portrait-width); }
+}
 @media (min-width: 901px) and (prefers-reduced-motion: reduce) {
   .record .record-track { width: 100%; overflow-x: auto; padding-bottom: 20px; }
   .record .record-progress { display: none; }
