@@ -14,7 +14,7 @@ main > section:not(.launch, .acts)::before, .act::before {
   inset: 0;
   z-index: -1;
   background: url("/img/lion-white.webp") right top / min(62vw, 700px) auto no-repeat;
-  opacity: .07;
+  opacity: .16;
   filter: brightness(0);
   pointer-events: none;
 }
@@ -26,7 +26,7 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
   inset: 0;
   z-index: -1;
   background: url("/img/nii-campaign.webp") right bottom / min(36vw, 300px) auto no-repeat;
-  opacity: .14;
+  opacity: .6;
   pointer-events: none;
 }
 .record-head #record-h { font-size: clamp(32px, 5.5vw, 90px); max-width: 21ch; }
@@ -107,6 +107,7 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
 .thesis-profile img.studio-portrait { object-fit: contain; background: #64635e; }
 .pp-panel img.studio-portrait { width: 100%; height: 100%; object-fit: cover; filter: none; }
 .pull-photo .pp-panel { background: #fff; }
+.launch .launch-lion { opacity: .16; }
 /* Match section portraits to the portrait beside the leadership quote. */
 main { --section-portrait-width: calc((100vw - var(--pad) * 2 - 6vw) * 4 / 11); }
 .thesis-profile { width: var(--section-portrait-width); max-width: 100%; }
