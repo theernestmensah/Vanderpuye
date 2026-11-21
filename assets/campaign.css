@@ -104,6 +104,8 @@ main > :is(.record, .numbers, .trail, .press, .join, .donate-panel)::after {
 .join .red, .foot .red { color: #ff7382; }
 :focus-visible { outline: 3px solid #0574cc; outline-offset: 3px; box-shadow: 0 0 0 3px white; }
 .bar { background: var(--paper); }
+.thesis-profile img.studio-portrait { height: auto; object-fit: contain; background: #64635e; }
+.pp-panel img.studio-portrait { width: 100%; height: 100%; object-fit: cover; filter: none; }
 @media (min-width: 901px) and (prefers-reduced-motion: reduce) {
   .record .record-track { width: 100%; overflow-x: auto; padding-bottom: 20px; }
   .record .record-progress { display: none; }
